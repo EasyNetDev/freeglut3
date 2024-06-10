@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+export DEB_BUILD_MAINT_OPTIONS := hardening=+all
+
+after_override_dh_auto_install-arch:
+	find . -name '*.la' -print0 | xargs -0 rm -f

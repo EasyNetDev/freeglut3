@@ -1,0 +1,19 @@
+Source: freeglut3
+Maintainer: EasyNetDev <devel@easynet.dev>
+Section: graphics
+Priority: optional
+Build-Depends: cmake,
+               debhelper-compat (= 13)
+Standards-Version: 4.6.1
+Vcs-Browser: https://salsa.debian.org/debian/freeglut
+Vcs-Git: https://salsa.debian.org/debian/freeglut.git
+Homepage: https://freeglut.sourceforge.net/
+
+Package: freeglut3
+Architecture: all
+Multi-Arch: foreign
+Section: libs
+Depends: libglut3.12 (>= ${binary:Version}),
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Tranisitonal package

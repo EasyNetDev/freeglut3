@@ -1,0 +1,6 @@
+freeglut3 (3.4.0-1) unstable; urgency=medium
+
+  * Tranisitonal package for freeglut3 to point to libglut3.12
+
+ -- EasyNetDev <devel@easynet.dev>  Mon, 10 Jun 2024 16:08:04 +0300
+
